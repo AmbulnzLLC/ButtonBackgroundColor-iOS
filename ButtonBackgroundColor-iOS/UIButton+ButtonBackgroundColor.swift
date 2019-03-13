@@ -72,7 +72,7 @@ public extension UIButton
      
      - parameter sender: the button.
      */
-    func buttonTouchUpInside(_ sender: UIButton)
+    @objc func buttonTouchUpInside(_ sender: UIButton)
     {
         sender.backgroundColor = normalBackgroundColor()
     }
@@ -82,7 +82,7 @@ public extension UIButton
      
      - parameter sender: the button.
      */
-    func buttonTouchUpOutside(_ sender: UIButton)
+    @objc func buttonTouchUpOutside(_ sender: UIButton)
     {
         sender.backgroundColor = normalBackgroundColor()
     }
@@ -92,7 +92,7 @@ public extension UIButton
      
      - parameter sender: the button.
      */
-    func buttonTouchDown(_ sender: UIButton)
+    @objc func buttonTouchDown(_ sender: UIButton)
     {
         sender.backgroundColor = highlightedBackgroundColor()
     }
@@ -102,7 +102,7 @@ public extension UIButton
      
      - parameter sender: the button.
      */
-    func buttonTouchCancel(_ sender: UIButton)
+    @objc func buttonTouchCancel(_ sender: UIButton)
     {
         sender.backgroundColor = normalBackgroundColor()
     }
